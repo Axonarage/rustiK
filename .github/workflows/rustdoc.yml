@@ -19,7 +19,7 @@ jobs:
           toolchain: nightly
 
       - name: Build documentation
-        run: cargo doc --no-deps --target-dir Documentation
+        run: cargo +nightly doc --no-deps --target-dir Documentation
 
       - name: Add .nojekyll file
         run: touch Documentation/.nojekyll
