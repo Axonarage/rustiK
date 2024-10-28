@@ -1,1 +1,1 @@
-searchState.loadedDescShard("rustik", 0, "This function is called on panic.")
+searchState.loadedDescShard("rustik", 0, "Main script without dependencies\nThis function is called on panic.")
