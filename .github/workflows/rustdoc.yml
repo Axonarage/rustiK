@@ -16,13 +16,13 @@ jobs:
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable
+          toolchain: nightly
 
       - name: Build documentation
         run: cargo doc --no-deps --target-dir Documentation
 
       - name: Add .nojekyll file
-        run: touch docs/.nojekyll
+        run: touch Documentation/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
